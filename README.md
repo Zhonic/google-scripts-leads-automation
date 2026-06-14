@@ -1,2 +1,2 @@
-# portfolio
-Portfolio of automations and work I have done so far.
+# Google Scripts Leads Automation
+Google scripts automation for leads generated from Meta.
