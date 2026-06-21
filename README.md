@@ -145,3 +145,19 @@ No changes to the logic are required.
 - Reply detection ignores your own outbound mail (via `COMPANY_DOMAIN`) and common automated senders (`mailer-daemon`, `postmaster`, `no-reply`).
 - Lead metadata is stored in Script Properties and pruned automatically; it is scoped to this single Apps Script project.
 - Gmail sending and API usage are subject to Google's daily quotas.
+
+---
+
+## Repository contents
+
+| File | Purpose |
+| --- | --- |
+| `hws-lead-automation.gs` | The full Apps Script automation. |
+| `README.md` | This setup and configuration guide. |
+| `LICENSE` | MIT license. |
+| `.gitignore` | See note below. |
+
+A note on the `.gitignore`: this repo currently contains only the `.gs` script and this README, so none of its patterns match anything yet — **it ignores nothing today**. It's included for two forward-looking reasons:
+
+1. If the project is ever pulled into a local [clasp](https://github.com/google/clasp) workflow, it prevents committing clasp credentials (`.clasprc.json`) and the script ID (`.clasp.json`), along with the usual node, editor, and OS clutter.
+2. Consistency with the other automation repositories in this portfolio.
